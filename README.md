@@ -1,5 +1,7 @@
 # go-intrumentation-echo-zerolog
 
+[Read more about this repo](https://blog.cloudscript.com.br/instrumentando-aplicacoes-golang-utilizando-echo-zerolog/?ref=cloudscript-newsletter)
+
 This is an example for a Golang app instrumentation. 
 
 Environments
