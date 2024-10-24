@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"strings"
 
 	"github.com/jonathanschmittcs/go-intrumentation-echo-zerolog/internal/mylogger"
 	"go.elastic.co/apm/transport"
@@ -32,8 +31,6 @@ func Init() error {
 	if err != nil {
 		return err
 	}
-
-	Tracer.SetSanitizedFieldNames(strings.Split(os.Getenv("ELASTIC_APM_SANITIZE_FIELD_NAMES"), ",")...)
 
 	_, err = transport.InitDefault()
 	if err != nil {
